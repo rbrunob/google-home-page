@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #e8eaed;
+    font-size: 13px;
+}
+
+body {
+    background-color: #202124;
+}
+
+
+/*HEADER*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 15px;
+}
+
+.svg-container {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+    justify-content: center;
+}
+
+.container-header img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.svg-container:hover {
+    background: #ffffff12;
+    cursor: pointer;
+}
+
+.container-header img:hover {
+    background: #ffffff47;
+}
+
+
+/*HEADER*/
+
+
+/*MAIN*/
+
+main {
+    width: 100%;
+    position: relative;
+    height: 84.7vh;
+}
+
+.container-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    border-radius: 30px;
+    border: 1px solid #9aa0a691;
+    padding: 10px 12px;
+}
+
+.svg-container-search {
+    width: 23px;
+    height: 23px;
+}
+
+.search-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.svg-container-mic {
+    width: 23px;
+    height: 23px;
+}
+
+.logo-google {
+    width: 100%;
+    display: block;
+}
+
+.logo-google img {
+    margin: 0px auto;
+    width: auto;
+    display: block;
+}
+
+.container-search-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 85%;
+    background: transparent;
+    border: transparent;
+    color: white;
+    font-size: 15px;
+    padding: 3px 3px;
+    font-family: arial, sans-serif;
+}
+
+input[type="text"]:focus-visible {
+    outline: none;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container-btns-search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns a {
+    background: #303134;
+    border: 1px solid #303134;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #e8eaed;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+.btns a:hover {
+    background: #5b5d63;
+    border: 1px solid #5b5d63;
+}
+
+
+/*MAIN*/
+
+
+/*FOOTER*/
+
+footer {
+    background: #171717;
+    width: 100%;
+    height: auto;
+    padding: 0px 35px;
+}
+
+span {
+    color: #999da2;
+    font-size: 15px;
+}
+
+.country {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info a {
+    font-size: 14px;
+    color: #999da2;
+}
+
+.col-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.col-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+hr {
+    width: 100%;
+    border: transparent;
+    border-bottom: 1px solid #999da261;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*FOOTER*/
+
+
+/*MEDIA QUERYS*/
+
+@media screen and (max-width:1000px) {
+    .search-bar {
+        width: 70%;
+    }
+    .info {
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 20px 0;
+        height: auto;
+    }
+    .col-left {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .col-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .search-bar {
+        width: 90%;
+    }
+}
