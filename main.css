@@ -96,6 +96,12 @@ main {
     padding: 10px 12px;
 }
 
+.search-bar:hover {
+    background-color: #303134;
+    box-shadow: 0 1px 6px 0 #171717;
+    border-color: rgba(223, 225, 229, 0);
+}
+
 .svg-container-search {
     width: 23px;
     height: 23px;
@@ -241,6 +247,16 @@ hr {
 
 
 /*MEDIA QUERYS*/
+
+@media screen and (max-width: 1370px),
+(max-height: 770px) {
+    main {
+        height: 81.5vh;
+    }
+    .search-bar {
+        width: 45%;
+    }
+}
 
 @media screen and (max-width:1000px) {
     .search-bar {
