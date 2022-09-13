@@ -184,7 +184,6 @@ input[type="text"]:focus-visible {
 }
 
 .btns a:hover {
-    background: #5b5d63;
     border: 1px solid #5b5d63;
 }
 
