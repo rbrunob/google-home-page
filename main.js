@@ -1,11 +1,21 @@
-document.querySelector('input[type="text"]').addEventListener('keydown', function(e) {
-    document.querySelector('.search-bar').classList.add('search-bar-focused');
+const input = document.querySelector('input[type="text"]');
+const searchBar = document.querySelector('.search-bar');
+
+input.addEventListener('keydown', function(e) {
+    searchBar.classList.add('search-bar-focused');
     if (e.target.value == '' && e.which == 8) {
-        document.querySelector('.search-bar').classList.remove('search-bar-focused');
+        searchBar.classList.remove('search-bar-focused');
     }
+    // } else if (e.target.value == true && e.which == 13) {
+    //     e.target.value = search;
+    //     window.location.assign(`https://www.google.com/search?q='${search}'`)
+    // }
 })
 
 
-document.querySelector('.svg-container').addEventListener('click', function(e) {
-    document.querySelector('.apps-container').classList.toggle('active');
+const svgApps = document.querySelector('.svg-container');
+const appsContainer = document.querySelector('.apps-container');
+
+svgApps.addEventListener('click', function(e) {
+    appsContainer.classList.toggle('active');
 })
