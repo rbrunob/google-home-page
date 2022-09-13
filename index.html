@@ -217,18 +217,6 @@
     </footer>
 
 </body>
-
-<script>
-    document.querySelector('input[type="text"]').addEventListener('change', function(e) {
-        document.querySelector('.search-bar').classList.add('search-bar-focused');
-        if (e.target.value == '') {
-            document.querySelector('.search-bar').classList.remove('search-bar-focused');
-        }
-    })
-
-    document.querySelector('.svg-container').addEventListener('click', function(e) {
-        document.querySelector('.apps-container').classList.toggle('active');
-    })
-</script>
+<script src="main.js"></script>
 
 </html>
