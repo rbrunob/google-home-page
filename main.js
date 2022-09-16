@@ -5,12 +5,17 @@ input.addEventListener('keydown', function(e) {
     searchBar.classList.add('search-bar-focused');
     if (e.target.value == '' && e.which == 8) {
         searchBar.classList.remove('search-bar-focused');
+    } else if (e.target.value == value) {
+        value = search;
+        console.log(search);
     }
     // } else if (e.target.value == true && e.which == 13) {
     //     e.target.value = search;
     //     window.location.assign(`https://www.google.com/search?q='${search}'`)
     // }
 })
+
+// input.addEventListener('', function(e) {
 
 
 const svgApps = document.querySelector('.svg-container');
